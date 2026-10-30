@@ -93,12 +93,12 @@
     ],
     "question": "Why is posting an unfiltered student ID or access badge an extreme security risk?",
     "options": [
-      "The barcode and student number can be cloned for physical lab entry or used to impersonate him with IT helpdesks",
       "It immediately causes the photo file to be deleted from the university servers",
       "University guidelines only prohibit posting faculty badges",
-      "Student ID numbers can only be used to pay library overdue fees"
+      "Student ID numbers can only be used to pay library overdue fees",
+      "The barcode and student number can be cloned for physical lab entry or used to impersonate him with IT helpdesks"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "points": 200,
     "riskLevel": "Critical Credential Breach",
     "riskExplanation": "Modern barcodes and QR codes can be easily recreated from a standard smartphone photo. Attackers can duplicate the barcode onto a blank badge to gain physical access to campus labs, or use the Student ID number (MU2407185) and Date of Birth (12/03/2004) to impersonate Ali with university IT helpdesks to reset his email or portal passwords.",
@@ -128,12 +128,12 @@
     ],
     "question": "What dual physical and digital threat emerges from this travel announcement?",
     "options": [
-      "It broadcasts an unoccupied living space and enables believable spear-phishing emergencies to his family or peers",
       "It forces the train operator to delay the 4:15 service",
+      "It broadcasts an unoccupied living space and enables believable spear-phishing emergencies to his family or peers",
       "It triggers an automatic suspension of his student bus pass",
       "It resets his mobile phone operating system"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "points": 150,
     "riskLevel": "Physical & Social Engineering Exposure",
     "riskExplanation": "Declaring that your dorm or apartment is 'officially on sleep mode' until Monday morning is an open invitation for physical burglary. Additionally, cybercriminals who know you are traveling frequently launch urgent spear-phishing campaigns against your family or colleagues ('Ali lost his phone while traveling, send emergency funds!').",
