@@ -23,12 +23,12 @@
     ],
     "question": "What primary digital footprint risk is created by posting this photo?",
     "options": [
-      "Ali's precise recurring weekday morning schedule and physical building location are broadcast to anyone online",
       "His laptop Wi-Fi password is automatically leaked through the projector slide",
       "The professor's personal bank account details are exposed",
+      "Ali's precise recurring weekday morning schedule and physical building location are broadcast to anyone online",
       "It invalidates his university exam grades"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "points": 150,
     "riskLevel": "High Routine Exposure",
     "riskExplanation": "Broadcasting exact lecture times (8 AM Monday) and classroom numbers (Room 304) establishes a predictable pattern of life. In OSINT (Open Source Intelligence), this allows malicious actors, stalkers, or social engineers to know Ali's exact physical whereabouts down to the hour.",
