@@ -1,0 +1,182 @@
+[
+  {
+    "id": "scenario-1",
+    "title": "The Group Chat Live-Location Dilemma",
+    "category": "Location Sharing",
+    "context": "You and five classmates are meeting up for a hackathon on a bustling weekend. A classmate says: 'Turn on indefinite live location sharing in the 30-person class group chat so we can see everyone arrive!'",
+    "options": [
+      {
+        "id": "a",
+        "text": "Turn on indefinite live location sharing for the entire 30-person chat indefinitely.",
+        "isSafest": false,
+        "score": 0,
+        "feedback": "Dangerous: Group chats often include loose acquaintances, former students, and people you've never met. Sharing persistent live location lets all 30 members track your commute, home address, and late-night habits."
+      },
+      {
+        "id": "b",
+        "text": "Drop a static pin or temporary 15-minute location only to the 2 specific people you are meeting once you arrive near the venue.",
+        "isSafest": true,
+        "score": 150,
+        "feedback": "Safest Action! Limit location sharing strictly by scope (direct contact only) and duration (temporary timer or static landmark drop). Never broadcast 24/7 continuous GPS to large multi-user channels."
+      },
+      {
+        "id": "c",
+        "text": "Post your exact GPS coordinates publicly on your Instagram story with the caption 'On my way!'.",
+        "isSafest": false,
+        "score": 0,
+        "feedback": "Extreme Risk: Public broadcast of real-time movements exposes you to anyone on the internet, not just classmates."
+      }
+    ],
+    "takeaway": "Always apply the Principle of Least Privilege to physical location: share only with trusted peers, for the minimum duration necessary, using timed expirations."
+  },
+  {
+    "id": "scenario-2",
+    "title": "The Search Engine Indexing Shock",
+    "category": "Public Profiles",
+    "context": "You search your own full legal name on Google and find your public Instagram, a high school sports roster with your date of birth, and your personal home town listed on the front page of results.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Do nothing—if it's already indexed by Google, privacy is dead anyway.",
+        "isSafest": false,
+        "score": 0,
+        "feedback": "Fatalistic Inaction: The internet has a long memory, but you can actively shrink your surface area. Outdated indexed data becomes weaponized in spear-phishing and credential stuffing."
+      },
+      {
+        "id": "b",
+        "text": "Switch personal social profiles to Private, request Google remove outdated search results containing PII via Google Search Console removal tools, and decouple your full name from casual forums.",
+        "isSafest": true,
+        "score": 150,
+        "feedback": "Safest Action! Taking active hygiene steps—switching accounts to private, submitting search de-indexing requests for PII, and using pseudonyms for non-professional accounts—significantly reduces OSINT exposure."
+      },
+      {
+        "id": "c",
+        "text": "Create 10 more public social media accounts with your full legal name to drown out the old ones.",
+        "isSafest": false,
+        "score": 0,
+        "feedback": "Counterproductive: Creating more public accounts multiplies your digital footprint and creates additional attack surfaces for impersonation."
+      }
+    ],
+    "takeaway": "Conduct regular self-OSINT audits. De-index personally identifiable information (PII) and restrict non-professional accounts to verified friends only."
+  },
+  {
+    "id": "scenario-3",
+    "title": "The First Day of Work / Lab Badge Selfie",
+    "category": "Student ID Exposure",
+    "context": "You just landed a prestigious research assistant position at the university robotics lab. You are thrilled and want to share the news on LinkedIn and Instagram wearing your official access lanyard and smart keycard.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Snap a selfie holding the badge up to the camera so everyone can read your full title, security clearance level, and badge number.",
+        "isSafest": false,
+        "score": 0,
+        "feedback": "High Risk: Access badges frequently contain RFID frequencies, facility zone codes, and scannable serials that social engineers use to manufacture counterfeit access cards."
+      },
+      {
+        "id": "b",
+        "text": "Take a photo of the lab building entrance or a celebratory coffee, keep the badge tucked inside your pocket, and announce the achievement in text without displaying physical badges.",
+        "isSafest": true,
+        "score": 150,
+        "feedback": "Safest Action! Celebrate achievements through narrative text or generic campus scenery. Keep physical security tokens, keys, and access badges completely off camera."
+      },
+      {
+        "id": "c",
+        "text": "Post the badge photo, but blur only your name while leaving the barcode and magnetic strip numbers visible.",
+        "isSafest": false,
+        "score": 25,
+        "feedback": "Flawed Protection: Attackers don't need your name if they have the machine-readable barcode or facility code. Digital blurring filters can often even be reversed or decoded."
+      }
+    ],
+    "takeaway": "Never display physical security tokens, keycards, lanyards, keys, or barcodes in photographs. Physical security begins with visual confidentiality."
+  },
+  {
+    "id": "scenario-4",
+    "title": "The Suspicious Utility App Permission Request",
+    "category": "App Permissions",
+    "context": "You download a simple free PDF reader and flashlight utility from the app store. Upon launch, it prompts for: 'Access Contacts', 'Access Background Precise Location', and 'Access Microphone'.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tap 'Allow Always' so the app doesn't bother you with dialogs while studying.",
+        "isSafest": false,
+        "score": 0,
+        "feedback": "Severe Danger: A PDF reader or flashlight has zero technical justification for microphone, contacts, or background location. It is almost certainly harvestware or adware packaging data brokers."
+      },
+      {
+        "id": "b",
+        "text": "Deny all unnecessary permissions immediately, uninstall the app, and install a reputable, open-source or system-native reader that requires no extra permissions.",
+        "isSafest": true,
+        "score": 150,
+        "feedback": "Safest Action! Always scrutinize the principle of necessity. When a single-function utility demands permissions outside its operational scope, treat it as hostile spyware."
+      },
+      {
+        "id": "c",
+        "text": "Allow microphone only, but deny location.",
+        "isSafest": false,
+        "score": 0,
+        "feedback": "Unsafe: Why would a PDF document reader need your ambient microphone audio? Compromising halfway still exposes sensitive audio data."
+      }
+    ],
+    "takeaway": "App permissions are the gatekeepers to your hardware. If an app's core feature does not logically depend on a sensor or database, deny and delete."
+  },
+  {
+    "id": "scenario-5",
+    "title": "The Airport Departure Gate Snapshot",
+    "category": "Travel Announcements",
+    "context": "You are sitting at the international terminal waiting for an 8-hour flight to a tech conference. Your boarding pass is in your hand displaying your name, flight number, booking reference (PNR), and 2D barcode.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Post a story of the boarding pass showing the barcode and caption: 'Off to Berlin for the next 2 weeks! Bye home!'",
+        "isSafest": false,
+        "score": 0,
+        "feedback": "Catastrophic Risk: Airline 2D barcodes encode passenger names, ticket numbers, and PNR booking codes. Anyone with the PNR can log into the airline portal, change seats, cancel flights, view passport numbers, and plunder frequent flyer miles. Plus, announcing a 2-week vacancy invites home break-ins."
+      },
+      {
+        "id": "b",
+        "text": "Keep your boarding pass completely private, wait until you have returned from the conference to post event photos ('trip recap'), and ensure home security is active.",
+        "isSafest": true,
+        "score": 150,
+        "feedback": "Safest Action! Delay travel posting until you are safely back. Boarding pass barcodes are sensitive cryptographic access tokens—treat them like passwords."
+      },
+      {
+        "id": "c",
+        "text": "Put an emoji over the flight number, but leave the square barcode exposed.",
+        "isSafest": false,
+        "score": 0,
+        "feedback": "Useless: Barcodes contain the full electronic ticket data! Covering the human-readable text does nothing when the barcode scanner can read the full booking in milliseconds."
+      }
+    ],
+    "takeaway": "Boarding passes and tickets are sensitive electronic credentials. Never post them online, and delay travel documentation until after you return."
+  },
+  {
+    "id": "scenario-6",
+    "title": "The Sudden DM from a 'Friend'",
+    "category": "Suspicious Links & Phishing",
+    "context": "At 11:30 PM, you receive a direct message from a classmate's Instagram account: 'OMG is this you in this video?? 😱 bit.ly/campus-leak-2026'. You notice their account hasn't posted in 6 months.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Click the link immediately to see if someone recorded you on campus without consent.",
+        "isSafest": false,
+        "score": 0,
+        "feedback": "Classic Phishing Victim: Urgency + curiosity + fear is the social engineering trifecta. The shortened bit.ly link redirects to a credential harvester designed to steal your Instagram session."
+      },
+      {
+        "id": "b",
+        "text": "Do NOT click the link. Contact your classmate via a separate trusted channel (phone call, SMS, or in-person) to alert them their account was hijacked, and report the message as compromised.",
+        "isSafest": true,
+        "score": 150,
+        "feedback": "Safest Action! Verify out-of-band. When an unexpected message uses urgency or curiosity with a shortened link, it is almost certainly an automated credential-stealing worm."
+      },
+      {
+        "id": "c",
+        "text": "Click the link, but if it asks for your password, type a fake password like 'password123' to see what happens.",
+        "isSafest": false,
+        "score": 25,
+        "feedback": "Unsafe: Merely visiting malicious URLs can trigger drive-by downloads, browser zero-days, or fingerprinting scripts. Do not visit suspicious links even with fake inputs."
+      }
+    ],
+    "takeaway": "Out-of-band verification is the primary defense against hijacked friend accounts. Never let artificial urgency override basic operational security."
+  }
+]

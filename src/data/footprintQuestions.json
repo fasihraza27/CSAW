@@ -1,0 +1,142 @@
+[
+  {
+    "id": "post-1",
+    "postNumber": 1,
+    "title": "The 8 AM Lecture",
+    "handle": "@ali_ahmed_tech",
+    "author": "Ali Ahmed",
+    "timestamp": "Monday · 8:02 AM",
+    "location": "Metropolis Hall · Lecture Room 304",
+    "image": "/images/post_lecture_hall_1793361230535.jpg",
+    "caption": "Another 8 AM lecture! Room 304 never gets warm ☕ Economics 101 with Dr. Miller. Who else survives on cold brew?",
+    "likes": 42,
+    "comments": 7,
+    "clueHotspots": [
+      {
+        "label": "Projector Slide",
+        "detail": "Economics 101: Lecture 3 - confirms exact enrolled course and syllabus schedule"
+      },
+      {
+        "label": "Time & Location",
+        "detail": "8:02 AM Monday in Room 304 - creates a recurring weekly attendance timetable"
+      }
+    ],
+    "question": "What primary digital footprint risk is created by posting this photo?",
+    "options": [
+      "Ali's precise recurring weekday morning schedule and physical building location are broadcast to anyone online",
+      "His laptop Wi-Fi password is automatically leaked through the projector slide",
+      "The professor's personal bank account details are exposed",
+      "It invalidates his university exam grades"
+    ],
+    "correctIndex": 0,
+    "points": 150,
+    "riskLevel": "High Routine Exposure",
+    "riskExplanation": "Broadcasting exact lecture times (8 AM Monday) and classroom numbers (Room 304) establishes a predictable pattern of life. In OSINT (Open Source Intelligence), this allows malicious actors, stalkers, or social engineers to know Ali's exact physical whereabouts down to the hour.",
+    "mitigation": "Avoid posting real-time schedule updates with specific room numbers. Share academic milestones after the term concludes, or omit specific times and physical rooms from public feeds."
+  },
+  {
+    "id": "post-2",
+    "postNumber": 2,
+    "title": "The Weekly Coffee Run",
+    "handle": "@ali_ahmed_tech",
+    "author": "Ali Ahmed",
+    "timestamp": "Wednesday · 2:15 PM",
+    "location": "Roast & Byte Coffeehouse · Corner 4th Ave",
+    "image": "/images/post_coffee_cafe_1793361231235.jpg",
+    "caption": "Same café, same order, every week. Vanilla iced latte hits different on Wednesdays. Working through week 4 assignments!",
+    "likes": 58,
+    "comments": 12,
+    "clueHotspots": [
+      {
+        "label": "Pattern of Habit",
+        "detail": "'Same café, same order, every week' explicitly confirms an immutable weekly routine"
+      },
+      {
+        "label": "Open Planner & Screen",
+        "detail": "Desk view reveals an open study schedule notebook and active laptop workspace"
+      }
+    ],
+    "question": "Which OSINT surveillance vulnerability does this recurring post introduce?",
+    "options": [
+      "Physical routine predictability that makes in-person stalking, eavesdropping, or Wi-Fi spoofing trivial",
+      "It alters the café's espresso machine temperature settings",
+      "It immediately downloads ransomware onto the viewer's device",
+      "It makes the coffee shop's payment terminal crash"
+    ],
+    "correctIndex": 0,
+    "points": 150,
+    "riskLevel": "Pattern of Life Risk",
+    "riskExplanation": "Stating 'Same café, same order, every week' combined with a specific day tells any stranger exactly where Ali will be every Wednesday afternoon. An attacker could orchestrate an 'accidental' run-in, eavesdrop on confidential student work, set up a rogue Wi-Fi access point ('Evil Twin attack'), or observe passwords over his shoulder.",
+    "mitigation": "Delay posting photos until after leaving the venue ('post-storying'). Avoid highlighting rigid weekly habits publicly, and be mindful of open notebooks and laptops visible in photos."
+  },
+  {
+    "id": "post-3",
+    "postNumber": 3,
+    "title": "The Student Badge Showoff",
+    "handle": "@ali_ahmed_tech",
+    "author": "Ali Ahmed",
+    "timestamp": "Thursday · 11:30 AM",
+    "location": "Computer Science Lab Building",
+    "image": "/images/post_student_id_card_1793361231733.jpg",
+    "caption": "Official! Passed my card key renewal for the semester. Computer science lab access unlocked 💻🎉 No more waiting for someone to let me in!",
+    "likes": 93,
+    "comments": 24,
+    "clueHotspots": [
+      {
+        "label": "Clear Barcode",
+        "detail": "High-contrast barcode MU2407185 can be scanned or printed onto RFID/magnetic blanks"
+      },
+      {
+        "label": "PII Exposure",
+        "detail": "Full name, student number, date of birth, and degree program are plainly readable"
+      }
+    ],
+    "question": "Why is posting an unfiltered student ID or access badge an extreme security risk?",
+    "options": [
+      "The barcode and student number can be cloned for physical lab entry or used to impersonate him with IT helpdesks",
+      "It immediately causes the photo file to be deleted from the university servers",
+      "University guidelines only prohibit posting faculty badges",
+      "Student ID numbers can only be used to pay library overdue fees"
+    ],
+    "correctIndex": 0,
+    "points": 200,
+    "riskLevel": "Critical Credential Breach",
+    "riskExplanation": "Modern barcodes and QR codes can be easily recreated from a standard smartphone photo. Attackers can duplicate the barcode onto a blank badge to gain physical access to campus labs, or use the Student ID number (MU2407185) and Date of Birth (12/03/2004) to impersonate Ali with university IT helpdesks to reset his email or portal passwords.",
+    "mitigation": "Never publish photos of government IDs, student badges, employee passes, event tickets, or boarding passes. If celebrating an accomplishment, obscure all barcodes, numbers, and personal details completely."
+  },
+  {
+    "id": "post-4",
+    "postNumber": 4,
+    "title": "The Weekend Travel Announcement",
+    "handle": "@ali_ahmed_tech",
+    "author": "Ali Ahmed",
+    "timestamp": "Friday · 3:45 PM",
+    "location": "Central Rail Terminal · Platform 7",
+    "image": "/images/post_weekend_trip_1793361232950.jpg",
+    "caption": "Leaving town for the weekend! Catching the 4:15 express. See you Monday morning, campus! Dorm room officially on sleep mode 🚆✌️",
+    "likes": 77,
+    "comments": 15,
+    "clueHotspots": [
+      {
+        "label": "Absence Broadcast",
+        "detail": "'Dorm room officially on sleep mode until Monday' alerts anyone that his living space is vacant"
+      },
+      {
+        "label": "Transit Timeline",
+        "detail": "Specifies 4:15 express train from Platform 7, confirming active departure"
+      }
+    ],
+    "question": "What dual physical and digital threat emerges from this travel announcement?",
+    "options": [
+      "It broadcasts an unoccupied living space and enables believable spear-phishing emergencies to his family or peers",
+      "It forces the train operator to delay the 4:15 service",
+      "It triggers an automatic suspension of his student bus pass",
+      "It resets his mobile phone operating system"
+    ],
+    "correctIndex": 0,
+    "points": 150,
+    "riskLevel": "Physical & Social Engineering Exposure",
+    "riskExplanation": "Declaring that your dorm or apartment is 'officially on sleep mode' until Monday morning is an open invitation for physical burglary. Additionally, cybercriminals who know you are traveling frequently launch urgent spear-phishing campaigns against your family or colleagues ('Ali lost his phone while traveling, send emergency funds!').",
+    "mitigation": "Post vacation and trip photos only after returning home ('throwback' style). Never broadcast exact travel dates or announce that your home/dorm will be empty."
+  }
+]

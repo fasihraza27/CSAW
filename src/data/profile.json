@@ -1,0 +1,30 @@
+{
+  "caseId": "INV-2026-SEASAW-042",
+  "codename": "THE INVISIBLE TRAIL",
+  "classification": "UNCLASSIFIED // EDUCATIONAL FORENSICS",
+  "organization": "SEASAW Cybersecurity Society",
+  "subject": {
+    "name": "Ali Ahmed",
+    "fictionalNotice": "Strictly Fictional Character for Educational Purposes",
+    "institution": "Metropolis University",
+    "role": "2nd Year Undergraduate, B.Sc. Computer Science",
+    "studentId": "MU2407185",
+    "age": 20,
+    "handles": {
+      "social": "@ali_ahmed_tech",
+      "code": "ali-ahmed-dev",
+      "forum": "ali_csci"
+    },
+    "bio": "CS student | Tech enthusiast | Coffee addict ☕ | Building cool things with code | Always on the go 🚀",
+    "riskLevel": "ELEVATED EXPOSURE",
+    "summary": "Ali is an active student who regularly documents his daily campus journey online. While his posts seem completely harmless to friends, malicious actors can piece together an alarming amount of personal information."
+  },
+  "objectives": [
+    "Identify daily schedule and lecture hall routine exposures",
+    "Detect habitual hangout and location pattern vulnerabilities",
+    "Uncover high-risk credential and student badge leakage",
+    "Spot physical absence and residential vulnerability windows",
+    "Extract embedded EXIF geolocation and hardware metadata",
+    "Navigate real-world privacy dilemmas under social pressure"
+  ]
+}

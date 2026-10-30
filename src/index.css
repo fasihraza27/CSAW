@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --color-cyber-black: #06090e;
+  --color-cyber-dark: #0b1017;
+  --color-cyber-surface: #111822;
+  --color-cyber-border: #1f2a38;
+  --color-cyber-green: #10b981;
+  --color-cyber-neon: #00ff88;
+  --color-cyber-cyan: #06b6d4;
+  --color-cyber-amber: #f59e0b;
+  --color-cyber-red: #ef4444;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #070b12;
+  color: #f1f5f9;
+  overflow-x: hidden;
+}
+
+/* Custom subtle cyber scanning line & grid effects */
+.cyber-grid {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(16, 185, 129, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(16, 185, 129, 0.04) 1px, transparent 1px);
+}
+
+.radar-sweep {
+  animation: radar 4s linear infinite;
+}
+
+@keyframes radar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080d15;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}

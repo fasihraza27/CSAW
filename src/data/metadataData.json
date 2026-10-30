@@ -1,0 +1,153 @@
+{
+  "sampleImage": "/images/metadata_sample_photo_1793361232950.jpg",
+  "filename": "CAMPUS_QUAD_20261018.JPG",
+  "fileSize": "1.08 MB",
+  "resolution": "1376 x 768 pixels",
+  "colorSpace": "sRGB",
+  "exifTags": [
+    {
+      "category": "Temporal Data",
+      "items": [
+        {
+          "key": "Date/Time Original",
+          "value": "2026:10:18 14:23:41 UTC",
+          "risk": "Medium",
+          "note": "Pinpoints exact minute photo was snapped"
+        },
+        {
+          "key": "Date/Time Digitized",
+          "value": "2026:10:18 14:23:41 UTC",
+          "risk": "Low",
+          "note": "Confirms original camera capture timestamp"
+        },
+        {
+          "key": "SubSec Time",
+          "value": "842ms",
+          "risk": "Low",
+          "note": "Millisecond precision sensor clock"
+        }
+      ]
+    },
+    {
+      "category": "Geolocation (GPS)",
+      "items": [
+        {
+          "key": "GPS Latitude",
+          "value": "51° 31' 28.56\" N (51.5246° N)",
+          "risk": "Critical",
+          "note": "High-accuracy GPS coordinates"
+        },
+        {
+          "key": "GPS Longitude",
+          "value": "0° 8' 2.40\" W (0.1340° W)",
+          "risk": "Critical",
+          "note": "Pinpoints central university courtyard walkway"
+        },
+        {
+          "key": "GPS Altitude",
+          "value": "28.4 meters above sea level",
+          "risk": "Medium",
+          "note": "Elevation data distinguishes floor level"
+        },
+        {
+          "key": "GPS Direction / Bearing",
+          "value": "42° North-East",
+          "risk": "Low",
+          "note": "Exact camera orientation towards clock tower"
+        }
+      ]
+    },
+    {
+      "category": "Hardware & Sensor Fingerprint",
+      "items": [
+        {
+          "key": "Camera Make & Model",
+          "value": "Sony Alpha ILCE-7M4 (A7 IV)",
+          "risk": "High",
+          "note": "Hardware device fingerprint"
+        },
+        {
+          "key": "Lens Model",
+          "value": "FE 24-70mm F2.8 GM II @ 28mm",
+          "risk": "Low",
+          "note": "Optical equipment identifier"
+        },
+        {
+          "key": "Device Serial Number",
+          "value": "SN: 4902-8821-X9",
+          "risk": "Critical",
+          "note": "Unique physical device serial that can correlate photos across different pseudonymous accounts"
+        },
+        {
+          "key": "Software / Firmware",
+          "value": "Sony Alpha v2.01",
+          "risk": "Low",
+          "note": "Internal camera firmware release"
+        }
+      ]
+    },
+    {
+      "category": "Optical Exposure Parameters",
+      "items": [
+        {
+          "key": "Shutter Speed",
+          "value": "1/800 sec",
+          "risk": "Low",
+          "note": "Fast shutter indicating outdoor daylight"
+        },
+        {
+          "key": "Aperture",
+          "value": "f/4.0",
+          "risk": "Low",
+          "note": "Standard depth of field"
+        },
+        {
+          "key": "ISO Sensitivity",
+          "value": "ISO 100",
+          "risk": "Low",
+          "note": "Optimal base ISO"
+        }
+      ]
+    }
+  ],
+  "platformHandling": [
+    {
+      "platform": "Major Social Media (Instagram, X, TikTok, Facebook)",
+      "status": "EXIF Stripped On Upload",
+      "detail": "Most large platforms compress images and remove EXIF headers to protect user privacy and save server storage.",
+      "riskStatus": "Protected on Public Feed"
+    },
+    {
+      "platform": "Direct File Transfer (AirDrop, Bluetooth, USB Drive)",
+      "status": "EXIF Fully Preserved",
+      "detail": "Sharing unmodified raw files sends the 100% untouched byte stream, including GPS coordinates and camera serial numbers.",
+      "riskStatus": "Vulnerable"
+    },
+    {
+      "platform": "Cloud Sharing (Google Drive, OneDrive, Dropbox Public Links)",
+      "status": "EXIF Fully Preserved",
+      "detail": "Cloud drives preserve byte-for-byte fidelity, allowing anyone with the download link to inspect EXIF metadata.",
+      "riskStatus": "Vulnerable"
+    },
+    {
+      "platform": "Messaging Apps (WhatsApp 'As Document', Telegram 'Without Compression')",
+      "status": "EXIF Preserved When Sent As File",
+      "detail": "Standard photos are compressed and stripped, but selecting 'Send as Document/Uncompressed' retains raw metadata.",
+      "riskStatus": "Vulnerable If Uncompressed"
+    }
+  ],
+  "challengeQuestion": {
+    "question": "Two photos are posted under different anonymous usernames. If both files contain the same camera serial number in their EXIF metadata, what can an investigator reasonably infer?",
+    "options": [
+      "The files may have come from the same camera body, although this alone does not identify who took the photos.",
+      "The photos share the same RGB color values in the top-left pixel",
+      "Both images have the exact same file size to the byte",
+      "The shutter speed proves the person pushed the button with the same finger pressure"
+    ],
+    "correctIndex": 0,
+    "points": 200,
+    "explanation": "Some cameras include a device serial number in manufacturer-specific EXIF MakerNotes. If present and preserved, a matching serial can suggest that two image files came from the same camera body. It does not prove who took either photo, and many devices or sharing platforms omit or remove this information.",
+    "mitigation": "Before sharing an original image, review and remove location and identifying metadata when appropriate. A screenshot may remove some original metadata, but check the resulting file rather than assuming every platform or method strips all identifying information."
+  },
+  "demoNotice": "SIMULATED EXIF DATA: The displayed image is illustrative and does not contain the GPS, timestamp, or camera serial values shown below. These fictional values are provided only for this educational case."
+}
